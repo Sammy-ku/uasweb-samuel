@@ -1,0 +1,15 @@
+{
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    },
+    "scripts": {
+        "serve": "php -S localhost:8001 -t public",
+        "migrate": "php .\\database\\migrate.php",
+        "back": "php .\\database\\backMigrate.php",
+        "tailwind": "npx tailwindcss -i styles.css -o ./public/css/app.css"
+
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
